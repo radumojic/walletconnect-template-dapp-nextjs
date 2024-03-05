@@ -7,7 +7,7 @@ import {
   VERSION
 } from '@/localConstants/sdkDappConstants';
 import { TransactionProps } from '@/types/transaction.types';
-import { Transaction } from '@/types/sdkCoreTypes';
+// import { Transaction } from '@/types/sdkCoreTypes';
 import { TokenTransfer } from '@/utils/sdkDappCore';
 
 const NUMBER_OF_TRANSACTIONS = 5;
@@ -16,7 +16,7 @@ export const getBatchTransactions = ({
   address,
   nonce,
   chainID
-}: TransactionProps): Transaction[] => {
+}: TransactionProps): unknown[] => {
   const transactions = Array.from(Array(NUMBER_OF_TRANSACTIONS).keys());
 
   return transactions.map((id) => {
