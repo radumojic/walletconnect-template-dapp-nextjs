@@ -1,6 +1,5 @@
 'use client';
 import { AuthRedirectWrapper, PageWrapper } from '@/wrappers';
-import { Transaction } from './transaction';
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
@@ -24,7 +23,7 @@ export default function Home({
           <div className='flex items-start sm:items-center h-full sm:w-1/2 sm:bg-center'>
             <div className='flex flex-col gap-2 max-w-[70sch] text-center sm:text-left text-xl font-medium md:text-2xl lg:text-3xl'>
               <div>
-                <h1>Template dApp Next.js</h1>
+                <h1>WalletConnect Next.js dApp</h1>
                 <p className='text-gray-400'>
                   The{' '}
                   <a
@@ -47,10 +46,9 @@ export default function Home({
                   blockchain.
                 </p>
               </div>
-              <Transaction />
             </div>
           </div>
-          <div className="h-4/6 bg-[url('/assets/img/multiversx-white.svg')] bg-contain bg-center bg-no-repeat w-1/2" />
+          <div className="h-4/6 bg-[url('/assets/img/walletconnect-white.svg')] bg-contain bg-center bg-no-repeat w-1/2" />
         </div>
       </PageWrapper>
     </AuthRedirectWrapper>

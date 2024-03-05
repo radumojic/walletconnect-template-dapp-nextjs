@@ -12,8 +12,8 @@ import {
 import {
   apiTimeout,
   walletConnectV2ProjectId,
-  environment,
-  sampleAuthenticatedDomains
+  environment
+  // sampleAuthenticatedDomains
 } from '@/config';
 import { BatchTransactionsContextProvider } from '@/wrappers';
 import { AxiosInterceptorContext } from '@multiversx/sdk-dapp/wrappers/AxiosInterceptorContext';
@@ -26,27 +26,30 @@ const AppContent = ({ children }: PropsWithChildren) => {
       customNetworkConfig={{
         name: 'customConfig',
         apiTimeout,
-        walletConnectV2ProjectId
+        walletConnectV2ProjectId,
+        walletConnectV2Options: {
+          logger: 'debug'
+        }
       }}
       dappConfig={{
         isSSR: true,
         shouldUseWebViewProvider: true,
         logoutRoute: RouteNamesEnum.unlock
       }}
-      customComponents={{
-        transactionTracker: {
-          // uncomment this to use the custom transaction tracker
-          // component: TransactionsTracker,
-          props: {
-            onSuccess: (sessionId: string) => {
-              console.log(`Session ${sessionId} successfully completed`);
-            },
-            onFail: (sessionId: string, errorMessage: string) => {
-              console.log(`Session ${sessionId} failed. ${errorMessage ?? ''}`);
-            }
-          }
-        }
-      }}
+      // customComponents={{
+      //   transactionTracker: {
+      //     // uncomment this to use the custom transaction tracker
+      //     // component: TransactionsTracker,
+      //     props: {
+      //       onSuccess: (sessionId: string) => {
+      //         console.log(`Session ${sessionId} successfully completed`);
+      //       },
+      //       onFail: (sessionId: string, errorMessage: string) => {
+      //         console.log(`Session ${sessionId} failed. ${errorMessage ?? ''}`);
+      //       }
+      //     }
+      //   }
+      // }}
     >
       <AxiosInterceptorContext.Listener>
         <TransactionsToastList />
@@ -61,9 +64,7 @@ const AppContent = ({ children }: PropsWithChildren) => {
 export default function App({ children }: { children: ReactNode }) {
   return (
     <AxiosInterceptorContext.Provider>
-      <AxiosInterceptorContext.Interceptor
-        authenticatedDomains={sampleAuthenticatedDomains}
-      >
+      <AxiosInterceptorContext.Interceptor authenticatedDomains={[]}>
         <BatchTransactionsContextProvider>
           <AppContent>{children}</AppContent>
         </BatchTransactionsContextProvider>

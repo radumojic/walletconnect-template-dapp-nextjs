@@ -6,3 +6,7 @@ export * from './BatchTransactions';
 export * from './PingPongRaw';
 export * from './Transactions';
 export * from './PingPongService';
+export * from './BalanceTransaction';
+export * from './MultipleTransactions';
+export * from './SingleTransaction';
+export * from './WalletConnectPing';
