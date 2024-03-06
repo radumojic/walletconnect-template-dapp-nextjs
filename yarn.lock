@@ -828,10 +828,10 @@
     keccak "3.0.2"
     protobufjs "7.2.4"
 
-"@multiversx/sdk-dapp@2.28.8-alpha.0":
-  version "2.28.8-alpha.0"
-  resolved "https://registry.yarnpkg.com/@multiversx/sdk-dapp/-/sdk-dapp-2.28.8-alpha.0.tgz#ccf412af7885dd6c62fca8c4eff562d52e738130"
-  integrity sha512-FGU1RrYfyddjjm6q+IyEeLclFrRoh7Qy+uNVpkjEgNoxdn/zFvh36Yn1/GoDmWtVs/BVxcaL5IsD1oJd71yczg==
+"@multiversx/sdk-dapp@2.28.8-alpha.1":
+  version "2.28.8-alpha.1"
+  resolved "https://registry.yarnpkg.com/@multiversx/sdk-dapp/-/sdk-dapp-2.28.8-alpha.1.tgz#e6763aae185244585c8c23a8fa68bd4e8b4a5139"
+  integrity sha512-bSlHdmoPRh6EwAzozJPf4g5YIYIxKrL9k+e32qSUDX5g5DasVKvjtZrY2py6gIYvr5HwJRQjBQtZ3zVAxgibqQ==
   dependencies:
     "@lifeomic/axios-fetch" "3.0.1"
     "@multiversx/sdk-core" "13.0.0-alpha.2"
@@ -841,7 +841,7 @@
     "@multiversx/sdk-opera-provider" "1.0.0-alpha.1"
     "@multiversx/sdk-wallet" "4.2.0"
     "@multiversx/sdk-wallet-connect-provider" "4.1.1"
-    "@multiversx/sdk-web-wallet-cross-window-provider" "0.0.22"
+    "@multiversx/sdk-web-wallet-cross-window-provider" "0.0.23"
     "@multiversx/sdk-web-wallet-provider" "3.2.1"
     "@reduxjs/toolkit" "1.8.2"
     axios "1.6.5"
@@ -945,10 +945,10 @@
     tweetnacl "1.0.3"
     uuid "8.3.2"
 
-"@multiversx/sdk-web-wallet-cross-window-provider@0.0.22":
-  version "0.0.22"
-  resolved "https://registry.yarnpkg.com/@multiversx/sdk-web-wallet-cross-window-provider/-/sdk-web-wallet-cross-window-provider-0.0.22.tgz#cea751c6b1846fbfbc7e17eba0031a56979b1c19"
-  integrity sha512-cD9ePvb+Kju4lYh7QCn7vrINEinDTRZAQhIeNe3Dt3HTd07Af48AUU01EjdEKnivROiKnXj5DKKmR8GZlSH7Tg==
+"@multiversx/sdk-web-wallet-cross-window-provider@0.0.23":
+  version "0.0.23"
+  resolved "https://registry.yarnpkg.com/@multiversx/sdk-web-wallet-cross-window-provider/-/sdk-web-wallet-cross-window-provider-0.0.23.tgz#74c9eb8e7d7cddaf62b0547c753e61714032003f"
+  integrity sha512-tBCDcogdJa9TlJpay/EGsMkPgMoWS7B4b7XX0dtIaTu0GY14Uz4cyU6BiZVoJrmg57HgI3p5d7psIddObRC4dg==
   dependencies:
     "@multiversx/sdk-core" "12.18.0"
     "@types/jest" "^29.5.11"
@@ -1652,9 +1652,9 @@
     "@types/react" "*"
 
 "@types/react-dom@^18.0.0":
-  version "18.2.19"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.2.19.tgz#b84b7c30c635a6c26c6a6dfbb599b2da9788be58"
-  integrity sha512-aZvQL6uUbIJpjZk4U8JZGbau9KDeAwMfmhyWorxgBkqDIEf6ROjRozcmPIicqsUwPUjbkDfHKgGee1Lq65APcA==
+  version "18.2.20"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.2.20.tgz#cbdf7abb3cc2377980bb1294bc51375016a8320f"
+  integrity sha512-HXN/biJY8nv20Cn9ZbCFq3liERd4CozVZmKbaiZ9KiKTrWqsP7eoGDO6OOGvJQwoVFuiXaiJ7nBBjiFFbRmQMQ==
   dependencies:
     "@types/react" "*"
 
@@ -3338,9 +3338,9 @@ ed2curve@0.3.0:
     tweetnacl "1.x.x"
 
 electron-to-chromium@^1.4.668:
-  version "1.4.692"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.692.tgz#82139d20585a4b2318a02066af7593a3e6bec993"
-  integrity sha512-d5rZRka9n2Y3MkWRN74IoAsxR0HK3yaAt7T50e3iT9VZmCCQDT3geXUO5ZRMhDToa1pkCeQXuNo+0g+NfDOVPA==
+  version "1.4.693"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.693.tgz#001bb5dcb57ba404366ec39e1957d11886fc8a93"
+  integrity sha512-/if4Ueg0GUQlhCrW2ZlXwDAm40ipuKo+OgeHInlL8sbjt+hzISxZK949fZeJaVsheamrzANXvw1zQTvbxTvSHw==
 
 emittery@^0.13.1:
   version "0.13.1"
@@ -8022,9 +8022,9 @@ yallist@^4.0.0:
   integrity sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
 
 yaml@^2.3.4:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.4.0.tgz#2376db1083d157f4b3a452995803dbcf43b08140"
-  integrity sha512-j9iR8g+/t0lArF4V6NE/QCfT+CO7iLqrXAHZbJdo+LfjqP1vR8Fg5bSiaq6Q2lOD1AUEVrEVIgABvBFYojJVYQ==
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.4.1.tgz#2e57e0b5e995292c25c75d2658f0664765210eed"
+  integrity sha512-pIXzoImaqmfOrL7teGUBt/T7ZDnyeGBWyXQBvOVhLkWLN37GXv8NMLK406UY6dS51JfcQHsmcW5cJ441bHg6Lg==
 
 yargs-parser@^18.1.2:
   version "18.1.3"
