@@ -1,14 +1,14 @@
 import { GAS_PRICE, VERSION } from '@/localConstants/sdkDappConstants';
 import { newTransaction } from '@/helpers/sdkDappHelpers';
 import { TransactionProps } from '@/types/transaction.types';
-// import { Transaction } from '@/types/sdkCoreTypes';
+import { Transaction } from '@/types/sdkCoreTypes';
 import { BATCH_TRANSACTIONS_SC } from '@/config';
 
 export const getSwapAndLockTransactions = ({
   address,
   chainID,
   nonce
-}: TransactionProps): unknown[] => {
+}: TransactionProps): Transaction[] => {
   return [
     newTransaction({
       chainID,
