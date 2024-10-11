@@ -47,7 +47,7 @@ export const useSendPingPongTransaction = ({
     sessionStorage.getItem(type)
   );
 
-  const network = useGetNetworkConfig();
+  const { network } = useGetNetworkConfig();
   const { address, account } = useGetAccountInfo();
 
   const transactionStatus = useTrackTransactionStatus({
